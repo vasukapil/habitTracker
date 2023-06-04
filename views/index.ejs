@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <title>Habit Tracker</title>
+  <style>
+    /* Add your custom styles here */
+  </style>
+</head>
+<body>
+  <h1>Habit Tracker</h1>
+  <h2>All Habits</h2>
+  <ul>
+    <% habits.forEach((habit) => { %>
+      <li><%= habit.name %> - <%= habit.status %></li>
+    <% }) %>
+  </ul>
+  <a href="/add">Add Habit</a>
+</body>
+</html>
